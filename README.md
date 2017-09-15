@@ -2,7 +2,7 @@
 
 ## Introduction 
 This repository contains the base template for building a RainCatcher workflow step. 
-Template contains form that collects first name last name.
+Template contains form that collects first name last name. Knowledge of Angular.js is required to use this template.
 
 ## Step structure
 
@@ -56,8 +56,7 @@ Definitions are required for the raincatcher-angularjs portal application to def
             "form": "<base-form></base-form>",
             "view": "<base></base>"
         }
-    }, 
-    ...
+    }
 ]
 ```
 
@@ -76,8 +75,9 @@ definition.json:
 ```json
 "templates": {
     "form": "<base-form></base-form>",
+    "view": "<base></base>"
+}
 ```
-
 
 
 ## Limitations
