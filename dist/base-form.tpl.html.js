@@ -7,9 +7,9 @@ try {
 
 ngModule.run(['$templateCache', function ($templateCache) {
   $templateCache.put('wfm-template/base-form.tpl.html',
-    '<p class="wfm-base-row">Please register details</p>\n' +
+    '<p class="wfm-step-row">Please register details</p>\n' +
     '<!-- Three field form -->\n' +
-    '<div class="wfm-base-row" class="form-group" ng-form name="baseForm">\n' +
+    '<div class="wfm-step-row" class="form-group" ng-form name="baseForm">\n' +
     '  <md-input-container class="md-block" flex-gt-sm>\n' +
     '    <label>E.g. First Name</label>\n' +
     '    <!-- Customise change ng-model ctrl.model to own variable --> \n' +
@@ -18,6 +18,10 @@ ngModule.run(['$templateCache', function ($templateCache) {
     '  <md-input-container class="md-block" flex-gt-sm>\n' +
     '    <label>E.g. Last Name </label>\n' +
     '    <input type="text" id="title" name="title" ng-model="ctrl.model.lastName" required>\n' +
+    '  </md-input-container>\n' +
+    '  <md-input-container class="md-block" flex-gt-sm>\n' +
+    '    <label>Email </label>\n' +
+    '    <input type="text" id="title" name="title" ng-model="ctrl.model.email" required>\n' +
     '  </md-input-container>\n' +
     '</div>\n' +
     '\n' +

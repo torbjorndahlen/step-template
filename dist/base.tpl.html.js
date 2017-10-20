@@ -9,12 +9,12 @@ ngModule.run(['$templateCache', function ($templateCache) {
   $templateCache.put('wfm-template/base.tpl.html',
     '<md-subheader>Report View</md-subheader>\n' +
     '<!-- Three field report -->\n' +
-    '<md-list class="base">\n' +
+    '<md-list>\n' +
     '  <md-list-item class="md-2-line">\n' +
     '    <div class="md-list-item-text">\n' +
     '      <!-- Customise change model. to own variable --> \n' +
     '      <h3>{{model.firstName}} </h3>\n' +
-    '      <p>E.g. First name </p>\n' +
+    '      <p>First name </p>\n' +
     '    </div>\n' +
     '    <md-divider></md-divider>\n' +
     '  </md-list-item>\n' +
@@ -22,7 +22,15 @@ ngModule.run(['$templateCache', function ($templateCache) {
     '  <md-list-item class="md-2-line">\n' +
     '    <div class="md-list-item-text">\n' +
     '      <h3>{{model.lastName}} </h3>\n' +
-    '      <p>E.g. Last Name</p>\n' +
+    '      <p>Last Name</p>\n' +
+    '    </div>\n' +
+    '    <md-divider></md-divider>\n' +
+    '  </md-list-item>\n' +
+    '\n' +
+    '  <md-list-item class="md-2-line">\n' +
+    '    <div class="md-list-item-text">\n' +
+    '      <h3>{{model.email}} </h3>\n' +
+    '      <p>Email</p>\n' +
     '    </div>\n' +
     '    <md-divider></md-divider>\n' +
     '  </md-list-item>\n' +
